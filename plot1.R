@@ -4,7 +4,7 @@
 mydata <- read.table('data.txt', sep=';', header=TRUE)
 
 # subset the dataset by converting the Date from char to date format and then filtering on Feb 01 and 02, 2007 data
-mydata %>% mutate(Date = strptime(Date, %d%m%Y) %>% filter(Date == as.Date("02/01/2007") | Date == as.Date("02/02/2007"))
+mydata %>% mutate(Date = strptime(Date, %d%m%Y) %>% filter(Date == as.Date("02/01/2007", %d%m%Y) | Date == as.Date("02/02/2007", %d%m%Y))
 
 # create plot in png file                                
 png(filename='plot1.png', width=480, height=480, units='px')

@@ -1,4 +1,4 @@
-#this file contains the code to generate plot1.png using data set "Electric power consumption"
+#this file contains the code to generate plot2.png using data set "Electric power consumption"
 
 # read the dataset "Electric power consumption"
 mydata <- read.table('data.txt', sep=';', header=TRUE)
